@@ -1,0 +1,399 @@
+h1 {
+    font-family: Ink Free, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-family: Monotype Corsiva, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    font-weight: normal;
+}
+
+p {
+    font-family: Gill Sans Medium, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.chat-bubble p {
+    font-size: 10px;
+    color: white;
+    opacity: 0;
+}
+
+.container { /* The container of the main page */
+    width: 1020px;
+    height: 1020px;
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-1020px);
+    overflow-x: hidden;
+    overflow-y: scroll; /* So that the page can move along the X axis */
+    scroll-behavior: smooth; /* For a smooth animation when clicking the navigation button */
+    -ms-overflow-style: none;  /* Hide scroll bar for Internet Explorer 10+ */
+    scrollbar-width: none;  /* Hide scroll bar for Firefox */
+    margin: 0 auto;
+}
+
+.container2 { /* The container of the "About me" page */
+    width: 1020px;
+    height: 1020px;
+    background-color: #FE978E;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    margin: 0 auto;
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+
+.container2 p {
+    font-size: 50px;
+}
+
+.container2 p a {
+    font-size: 50px;
+    color: #fdf7bd;
+}
+
+.back-to-top { /* style for the "Back to top" button at the last slide */
+    color: #fdf7bd;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.container::-webkit-scrollbar {
+    display: none; /* Hide scroll bar for Safari and Chrome */
+}
+
+.row {
+    display: flex;
+    width: 10200px;
+    transform-origin: top left;
+    transform: rotate(90deg) translateY(-1020px);
+    background-color: #FE978E;
+    height: 1020px;
+    position: relative;
+    /* background-image: url("images/grid.png"); */
+}
+
+.page-transition { /* Animation when changing between the main page and the "About me" page */
+    animation: pageIn 0.75s;
+}
+
+.slide-assets { /* For the assets that have size 1020px * 1020px, that means it can be fitted in one slide */
+    position: absolute;
+    height: 1020px;
+    width: 1020px;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.non-slide-assets { /* For the assets that don't have the size of 1020px * 1020px, usually assets that can move to other slides */
+    position: fixed;
+    background-size: cover;
+}
+
+.slide0 {
+    top: 0;
+    left: 0;
+}
+
+.slide1 {
+    top: 0;
+    left: 1020px;
+}
+
+.slide2 {
+    top: 0;
+    left: 2040px;
+}
+
+.slide3 {
+    top: 0;
+    left: 3060px;
+}
+
+.slide4 {
+    top: 0;
+    left: 4080px;
+}
+
+.slide5 {
+    top: 0;
+    left: 5100px;
+}
+
+.slide6 {
+    top: 0;
+    left: 6120px;
+}
+
+.slide7 {
+    top: 0;
+    left: 7140px;
+}
+
+.slide8 {
+    top: 0;
+    left: 8160px;
+}
+
+.slide9 {
+    top: 0;
+    left: 9180px;
+}
+
+.title {
+    top: 521px;
+    left: 474px;
+    width: 460px;
+}
+
+.text1 {
+    top: 641px;
+    left: 474px;
+    width: 460px;
+    font-size: 40px;
+}
+
+.text2 {
+    top: 300px;
+    left: 3110px;
+    width: 460px;
+}
+
+.text3 {
+    top: 180px;
+    left: 6160px;
+    width: 460px;
+}
+
+.text4 {
+    top: 460px;
+    left: 9220px;
+    width: 460px;
+}
+
+.text5 {
+    top: 400px;
+    left: 9700px;
+    width: 460px;
+	font-size: 20px;
+	font-family: Ink Free, sans-serif;
+	text-align: center;
+	opacity: 0;
+	transform: translateY(10%);
+	transition: opacity 0.5s,  transform 0.5s;	
+}
+
+.sun {
+    top: 0;
+    left: 0;
+    height: 460px;
+    width: 460px;
+    background-image: url("images/sun.png");
+}
+
+.chat-bubble {
+    background-image: url("images/bubble.png");
+    z-index: 4;
+    transition: transform 0.3s;
+    transform-origin: bottom left;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.chat-bubble:hover {
+    transform: scale(3);
+    background-image: url("images/bubble2.png");
+}
+
+.chat-bubble:hover p {
+    opacity: 0.6;
+}
+
+.about-me {
+    width: 140px;
+    height: 60px;
+    left: 120px;
+    top: 680px;
+    color: #fdf7bd;
+    opacity: 0.8;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 16px;
+    font-family: "Ink Free", sans-serif;
+}
+
+.chat1 {
+    top: 440px;
+    left: 3760px;
+    height: 66px;
+    width: 103px;
+}
+
+.chat2 {
+    top: 530px;
+    left: 6120px;
+    height: 66px;
+    width: 103px;
+}
+
+.clouds {
+    left: 0;
+    top: 0;
+    height: 1530px;
+    width: 5100px;
+    opacity: 0.4;
+    background-image: url("images/clouds.png");
+}
+
+.road {
+    background-image: url("images/road.png");
+}
+
+.road-title {
+    background-image: url("images/road-title.png");
+}
+
+.cliff1 {
+    background-image: url("images/cliff1.png");
+}
+
+.cliff2 {
+    background-image: url("images/cliff2.png");
+    top: 1020px;
+}
+
+.doves {
+    background-image: url("images/doves.png");
+}
+
+.sea {
+    background-image: url("images/sea.png");
+    width: 3060px;
+}
+
+.ship {
+    background-image: url("images/ship.png");
+}
+
+.tree {
+    background-image: url("images/tree.png");
+    width: 3060px;
+    z-index: 2;
+}
+
+.tank {
+    background-image: url("images/tank.png");
+    z-index: 3;
+}
+
+.mountain {
+    background-image: url("images/mountain.png");
+}
+
+.wind {
+    top: 526px;
+    left: 9691px;
+    height: 284px;
+    width: 456px;
+    background-image: url("images/wind.png");
+    transition: transform 0.3s;
+}
+
+.wind:hover {
+    transform: scale(1.1);
+}
+
+.wind:hover ~ .text5{
+    opacity: 1;
+	transform: translateY(0%);
+}
+
+.nav-button {
+    position: fixed;
+    bottom: 40px;
+    height: 60px;
+    width: 140px;
+    background-size: cover;
+    cursor: pointer; /* Change cursor's image, since it can be interacted */
+    z-index: 4;
+    transition: transform 0.3s;
+}
+
+.nav-button:hover {
+    transform: scale(1.2); /* Zoom the navigation button a bit when they are hovered */
+}
+
+.nav-left {
+    left: 40px;
+    background-image: url("images/left-button.png");
+}
+
+.nav-right {
+    left: 840px;
+    background-image: url("images/right-button.png");
+}
+
+.fade-in { /* Some animation for the texts */
+    animation: fadeIn 0.75s;
+    opacity: 1;
+}
+
+.fade-out {
+    animation: fadeOut 0.75s;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
+
+@keyframes pageIn {
+    from {
+        opacity: 0;
+        transform: translateY(5%);
+    } to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@font-face {
+	font-family: Ink Free;
+	src: url("fonts/Inkfree.ttf");
+}
+
+@font-face {
+	font-family: Monotype Corsiva;
+	src: url("fonts/Monotype\ Corsiva.ttf");
+}
+
+@font-face {
+	font-family: Gill Sans;
+	src: url("fonts/Gill\ Sans.otf");
+}
+
+@font-face {
+	font-family: Gill Sans Medium;
+	src: url("fonts/Gill\ Sans\ Medium.otf");
+}

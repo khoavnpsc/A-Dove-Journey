@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Dove's Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row"><div class="page-transition">
+            <div class="non-slide-assets sun"></div>
+            <div class="non-slide-assets chat-bubble chat2"><p>When will this war end</p></div>
+            <div class="non-slide-assets chat-bubble chat1"><p>They release doves for ceremony</p></div>
+            <div class="nav-button nav-left" id="left-button"></div>
+            <div class="nav-button nav-right" id="right-button"></div>
+            <div class="slide-assets slide0 clouds"></div>
+            <div class="slide-assets slide0 road-title"></div>
+            <a class="non-slide-assets about-me" href="about.html">About me</a>
+            <div class="slide-assets slide1 cliff1"></div>
+            <div class="slide-assets slide1 cliff2"></div>
+            <div class="slide-assets slide1 doves"></div>
+            <div class="slide-assets slide2 sea"></div>
+            <div class="slide-assets slide3 ship"></div>
+            <div class="slide-assets slide5 tree"></div>
+            <div class="slide-assets slide6 tank"></div>
+            <div class="slide-assets slide6 mountain"></div>
+            <div class="slide-assets slide8 road"></div>
+			<div class="non-slide-assets wind" onmouseover="document.getElementById('wind-sound').play()" onmouseout="s = document.getElementById('wind-sound'); s.pause(); s.currentTime = 0;"></div>
+			<div class="non-slide-assets title"><h1>A DOVE'S JOURNEY</h1></div>
+			<div class="non-slide-assets text1"><h1>Scroll or use buttons to navigate</h1></div>
+			<div class="non-slide-assets text2"><h2>One of the reasons for the dove-releasing ceremony is to hope for peace and comfort.</h2></div>
+			<div class="non-slide-assets text3"><h2>The only reason for tanks to exist is war.</h2></div>
+			<div class="non-slide-assets text4"><h2>Your journey has ended. Now find your reward in the wind.<div onclick="document.querySelector('.container').scrollTop = '0px'" class="back-to-top">Back to top?</div></h2></div>
+			<div class="non-slide-assets text5">Please turn on permission to play sound on your browser if you cannot hear the music.</div>
+        </div></div>
+    </div>
+	<!-- Song: Smile (Royalty Free Music by Benjamin Tissot)
+	Link: https://www.bensound.com/royalty-free-music/track/smile -->
+	<audio id="wind-sound" src="audio/smile.mp3"><source ></audio>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
